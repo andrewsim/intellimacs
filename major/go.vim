@@ -28,6 +28,11 @@ let g:WhichKeyDesc_Major_Goto_HeaderOrSource = "<leader>mgh header-or-source"
 nnoremap <leader>mgh    :action SwitchHeaderSource<CR>
 vnoremap <leader>mgh    <Esc>:action SwitchHeaderSource<CR>
 
+" Go to header/source window
+let g:WhichKeyDesc_Major_Goto_HeaderOrSourceWindow = "<leader>mgH header-or-source-window"
+nnoremap <leader>mgH    :action SplitVertically<CR>:action SwitchHeaderSource<CR>
+vnoremap <leader>mgH    <Esc>:action SplitVertically<CR>:action SwitchHeaderSource<CR>
+
 " Go to method in file
 let g:WhichKeyDesc_Major_Goto_Member = "<leader>mgm file-methods"
 nnoremap <leader>mgm    :action FileStructurePopup<CR>
